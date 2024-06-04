@@ -1,8 +1,7 @@
 :root {
-  --white: #E0F7FA;
-  --lightGray: #e4e6ec;
-  --gray: #c5c5c5;
-  --black: #2e3030;
+  --lightGray: #F5F5F5;
+  --gray: #e2dcd7;
+  --black: #0e0e0e;
 
 }
 
@@ -40,12 +39,11 @@ body {
   position: absolute;
   left: 82px;
   top: 50%;
-  color: white;
 }
 
 #circle-base {
   fill: none;
-  stroke: #c5c5c5;
+  stroke: var(--gray);
   stroke-width: 0.196em;
   stroke-dasharray: 100 100;
 }
@@ -79,8 +77,10 @@ body {
   position: absolute;
   width: 450px;
   left: 50%;
-  top: 10%;
+  top: -2%;
   margin-left: -240px;
+  transform: scale(0.85);
+
 }
 
 .slider {
@@ -96,13 +96,13 @@ body {
 
 .slider .ui-widget-header {
   background-image: none;
+  background-color: var(--gray);
 }
 
 .slider .ui-slider-handle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--black);
 }
 
 #timer {
@@ -144,4 +144,19 @@ body {
   position: absolute;
   left: 125px;
   top: -13%;
+}
+
+.footer {
+  font-size: 1.5em;
+  color: var(--black);
+  position: absolute;
+  font-weight: 600;
+  position: absolute;
+  left: 100px;
+  top: 610px;
+  text-decoration: underline;
+}
+
+.footer:hover {
+  color: var(--black);
 }
